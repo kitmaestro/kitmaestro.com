@@ -46,6 +46,48 @@
 			.text-center {
 				text-align: center;
 			}
+
+			.navbar {
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				position: sticky;
+				top: 0;
+				border-bottom: 1px solid #ddd;
+				text-align: center;
+			}
+
+			.navbar a {
+				padding: 4px 8px;
+				text-decoration: none;
+				color: #673ab7;
+				background-color: #fff;
+				border: 1px solid #ddd;
+				display: inline-block;
+				font-weight: bold;
+			}
+
+			.navbar a:hover {
+				opacity: .85;
+				background-color: #673ab7;
+				color: #fff;
+				font-weight: bold;
+			}
+
+			.mySlides {
+				background: #f1f1f1f1;
+				padding: 80px;
+				text-align: center;
+				margin-bottom: 24px;
+			}
+
+			q {
+				font-style: italic;
+			}
+
+			.author {
+				color: cornflowerblue;
+			}
 		</style>
 		<div style="width: 100%; max-width: 720px; margin: 0 auto;">
 			<img alt="Logo de KitMaestro" src="https://github.com/user-attachments/assets/69a3da3f-f758-403f-a67a-1773e20524d7">
@@ -54,34 +96,102 @@
 				Transformando la educación dominicana con herramientas de automatización para maestros.
 			</p>
 			<a class="cta-button" href="https://app.kitmaestro.com">¡Entra ya!</a>
+			<div class="navbar">
+				<a href="#home">Inicio</a>
+				<a href="#about">Sobre Nosotros</a>
+				<a href="#tools">Herramientas</a>
+				<a href="#testimonials">Testimonios</a>
+				<a href="#contact">Cont&aacute;ctanos</a>
+			</div>
 			<p>
 				KitMaestro es tu caja de herramientas definitiva para la enseñanza. Diseñada por y para educadores, nuestra app te ofrece una variedad de recursos que facilitan y enriquecen tu labor docente.
 			</p>
-			<h2>¿Qué es KitMaestro?</h2>
-			<p>
-				KitMaestro es una aplicación integral que reúne todas las herramientas que necesitas para gestionar tu aula de manera eficiente y creativa. Desde la planificación de clases hasta la evaluación de estudiantes, KitMaestro está aquí para apoyarte en cada paso del camino.
-			</p>
-			<h2>Características Principales</h2>
-			<ul>
-				<li><b>Planificación de Clases</b>: Crea y organiza tus planes de clase de manera sencilla y rápida.</li>
-				<li><b>Evaluaciones Personalizadas</b>: Diseña evaluaciones adaptadas a las necesidades de tus estudiantes.</li>
-				<li><b>Recursos Educativos</b>: Accede a una biblioteca de materiales didácticos y actividades interactivas.</li>
-				<li><b>Comunicación Efectiva</b>: Mantén una comunicación fluida con tus estudiantes y sus familias.</li>
-				<li><b>Análisis de Rendimiento</b>: Monitorea el progreso de tus estudiantes con informes detallados.</li>
-			</ul>
-			<h2>¿Por Qué Elegir KitMaestro?</h2>
-			<ul>
-				<li><b>Facilidad de Uso</b>: Interfaz intuitiva y amigable.</li>
-				<li><b>Personalización</b>: Adapta las herramientas a tu estilo de enseñanza.</li>
-				<li><b>Innovación</b>: Mantente al día con las últimas tendencias educativas.</li>
-				<li><b>Soporte</b>: Asistencia técnica y recursos de formación disponibles.</li>
-			</ul>
-			<h3>¡Únete a la Revolución Educativa!</h3>
-			<p>
-				KitMaestro no es solo una app, es una comunidad de educadores comprometidos con la excelencia. Descubre cómo KitMaestro puede transformar tu manera de enseñar y mejorar la experiencia de aprendizaje de tus estudiantes.
-			</p>
+			<div id="home">
+				<h2>¿Qué es KitMaestro?</h2>
+				<p>
+					KitMaestro es una aplicación integral que reúne todas las herramientas que necesitas para gestionar tu aula de manera eficiente y creativa. Desde la planificación de clases hasta la evaluación de estudiantes, KitMaestro está aquí para apoyarte en cada paso del camino.
+				</p>
+				<h2>Características Principales</h2>
+				<ul>
+					<li><b>Planificación de Clases</b>: Crea y organiza tus planes de clase de manera sencilla y rápida.</li>
+					<li><b>Evaluaciones Personalizadas</b>: Diseña evaluaciones adaptadas a las necesidades de tus estudiantes.</li>
+					<li><b>Recursos Educativos</b>: Accede a una biblioteca de materiales didácticos y actividades interactivas.</li>
+					<li><b>Comunicación Efectiva</b>: Mantén una comunicación fluida con tus estudiantes y sus familias.</li>
+					<li><b>Análisis de Rendimiento</b>: Monitorea el progreso de tus estudiantes con informes detallados.</li>
+				</ul>
+				<h2>¿Por Qué Elegir KitMaestro?</h2>
+				<ul>
+					<li><b>Facilidad de Uso</b>: Interfaz intuitiva y amigable.</li>
+					<li><b>Personalización</b>: Adapta las herramientas a tu estilo de enseñanza.</li>
+					<li><b>Innovación</b>: Mantente al día con las últimas tendencias educativas.</li>
+					<li><b>Soporte</b>: Asistencia técnica y recursos de formación disponibles.</li>
+				</ul>
+				<h3>¡Únete a la Revolución Educativa!</h3>
+			</div>
+			<div id="about">
+				<h2>Sobre Nosotros</h2>
+				<p>
+					Somos un pequeño equipo de docentes de Miches, provincia El Seibo. Estamos haciendo herramientas de automatización y productividad para docentes desde finales de 2017, logrando solucionar los principales problemas del docente dominicano y haciendo hasta 15 veces más eficiente el proceso de organización y planeación docente. Nuestra única misión es devolver al maestro el tiempo de su vida personal que le ha estado robando la escuela desde hace años. Sin descanso no somos nosotros, con tanto escribir no tenemos tiempo para lo que de verdad importa, y eso es lo que nos motiva.
+				</p>
+				<p>
+					En KitMaestro, creemos en el poder de la educación para cambiar el mundo. Nuestro equipo está compuesto por educadores apasionados y expertos en tecnología que trabajan juntos para crear soluciones prácticas y efectivas para el aula. Nuestra misión es empoderar a los maestros con herramientas que les permitan enseñar de manera más eficiente y creativa.
+				</p>
+				<p>
+					KitMaestro no es solo una app, es una comunidad de educadores comprometidos con la excelencia. Descubre cómo KitMaestro puede transformar tu manera de enseñar y mejorar la experiencia de aprendizaje de tus estudiantes.
+				</p>
+			</div>
+			<div id="tools">
+				<h2>Herramientas Disponibles</h2>
+				<p>
+					En KitMaestro tenemos disponibles 15 herramientas que facilitan el trabajo docente y cada d&iacute;a seguimos creando herramientas nuevas y perfeccionando las que ya tenemos. Recibimos constante retroalimentacion de los usuarios para brindar lo que de verdad se necesita, as&iacute; que no necesitas esperar para pedir lo que necesitas, eso que ves que nos hace falta en la plataforma. Siempre recibimos sugerencias y comentarios con una sonrisa.
+				</p>
+				<ul>
+					<li><b>Generador de instrumentos de evaluación</b>: Crea f&aacute;cilmente instrumentos de evaluaci&oacute;n efectivos</li>
+					<li><b>Generador de planes diarios</b>: Crea los planes para tus clases en a penas 30 segundos</li>
+					<li><b>Generador de unidades de aprendizaje</b>: Crea unidades de aprendizaje en menos de 2 minutos</li>
+					<li><b>Calculadora de promedios</b>: Calcula los promedios en un santiam&eacute;n</li>
+					<li><b>Calculadora de asistencia</b>: Obt&eacute;n tablas de correspondencia con porcentajes de asistencia</li>
+					<li><b>Generador de calificaciones</b>: Crea tablas completas de asistencia para primaria o secundaria</li>
+					<li><b>Generador de asistencia</b>: Crea tablas completas de asistencia</li>
+					<li><b>Generador de aspectos trabajados (para el registro)</b>: Obt&eacute;n los aspectos del registro en base a los contenidos trabajados</li>
+					<li><b>Generador de hojas de ejercicios (lengua española, matemática y juegos)</b>: Crea hojas de actividades de manera instant&aacute;nea</li>
+					<li><b>Lista de tareas pendientes</b>: Lleva un registro de tus tareas y las de tus estudiantes</li>
+					<li><b>Generador de conversaciones en inglés</b>: Genera conversaciones en ingl&eacute;s de diferentes niveles</li>
+					<li><b>Generador de actividades</b>: Genera actividades diversas y significativas</li>
+					<li><b>Generador de registro anecdótico</b>: Crea entradas para el registro anecd&oacute;tico en solo 1 minuto</li>
+					<li><b>Plantillas de planificación</b>: Crea plantillas personalizadas de planificaci&aacute;n diaria</li>
+					<li><b>Galería de recursos</b>: Comparte o vende tus recursos did&aacute;cticos con facilidad, transparencia y 0 comisiones</li>
+				</ul>
+				<p>¡La revolución apenas comienza! Consulta nuestro plan de desarrollo hasta 2026 <a href=“https://app.kitmaestro.com/roadmap”>aquí</a> y no dudes en sugerir nuevas herramientas.</p>
+			</div>
+			<div id="testimonials">
+				<h2>Testimonios</h2>
+				<div class="mySlides">
+					<q>Es demasiado f&aacute;cil, solo me explic&oacute; como hacer la primera, de ah&iacute; me fui sola. ¡Mejor de ah&iacute; es imposible!</q>
+					<p class="author">- An&oacute;nimo, Profesora de Primaria</p>
+				</div>
+
+				<div class="mySlides">
+					<q>Ten&iacute;a que salir de licencia para operarme y me pidieron que planificara para el maestro que me iba a sustituir. Con KitMaestro hice 4 planes de unidad y 84 planes diarios en menos de una hora. ¡Incre&iacute;ble!</q>
+					<p class="author">- An&oacute;nimo, Profesor de Primaria</p>
+				</div>
+
+				<div class="mySlides">
+					<q>Te ayuda con la planificaci&oacute;n, hace las r&uacute;bricas y hojas de ejercicio. Te facilita demasiado la vida. ¡El final!</q>
+					<p class="author">- Cornelio, Profesor de Primaria</p>
+				</div>
+			</div>
 			<a class="cta-button" href="https://app.kitmaestro.com">¡Entra ya!</a>
-			<p>
+			<div id="contact">
+				<h2>Cont&aacute;ctanos</h2>
+				<p>¿Tienes alguna pregunta o necesitas ayuda? ¡Estamos aquí para ti!</p>
+				<p>
+					Correo Electrónico: <a href="mailto:orgalay.dev@gmail.com">orgalay.dev@gmail.com</a></p> <br>
+					Teléfono: <a href="tel:+18094659650">(809) 465 9650</a> <br>
+					Dirección: Miches, República Dominicana
+				</p>
+			</div>
+			<p class="text-center">
 				KitMaestro &copy; 2024. Algunos Derechos Reservados.
 			</p>
 		</div>
