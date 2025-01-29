@@ -21,6 +21,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://www.google.com/recaptcha/enterprise.js?render=6Le59cUqAAAAALhpbDVimDsjDqwXJpSvFHGoND6S"></script>
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3940117372405832"
      crossorigin="anonymous"></script>
 	</head>
@@ -118,7 +119,7 @@
 						<div class="inner">
 							<h2 class="major">Contacta con Nosotros</h2>
 							<p>¿Tienes alguna pregunta o necesitas ayuda? ¡Estamos aquí para ti!</p>
-							<form method="post" action="https://api.kitmaestro.com/get-in-touch">
+							<form method="post" action="https://api.kitmaestro.com/get-in-touch" id="contact-form">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Nombre</label>
@@ -133,8 +134,9 @@
 										<textarea required name="message" id="message" rows="4"></textarea>
 									</div>
 								</div>
+								<input type="hidden" id="recaptcha-input" name="token">
 								<ul class="actions">
-									<li><input type="submit" value="Enviar Mensaje" /></li>
+									<li><button type="button" id="submit-button">Enviar Mensaje</button></li>
 								</ul>
 							</form>
 							<ul class="contact">
@@ -186,6 +188,24 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			  function onSubmit(token) {
+			      document.getElementById("recaptcha-input").value = token;
+			      const form = document.forms[0];
+			      // const formData = new FormData(form)
+			      // console.log(JSON.stringify(Object.fromEntries(formData)));
+			      form.submit();
+			  }
+			  function onClick(e) {
+			    e.preventDefault();
+			    grecaptcha.enterprise.ready(async () => {
+			      const token = await grecaptcha.enterprise.execute('6Le59cUqAAAAALhpbDVimDsjDqwXJpSvFHGoND6S', {action: 'SEND_MESSAGE'});
+			      onSubmit(token);
+			    });
+			  }
+
+			  document.getElementById("submit-button").addEventListener('click', onClick, false);
+			</script>
 
 	</body>
 </html>
